@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    --tone1: #363062;
+    --tone2: #4D4C7D;
+    --tone3: #827397;
+    --tone4: #E9D5CA;
+}
+
+
+main {
+    padding-bottom: 2%;
+}
+
+h1 {
+    text-align: center;
+    margin: 16px;
+}
+
+body {
+    color: var(--tone4);
+    background-color: var(--tone2);
+}
+
+nav{
+    background-color: var(--tone1);
+}
+
+nav a {
+    color: var(--tone4) !important;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid gray;
+    padding: 2%;
+}
+
+
+.navbar-brand {
+    margin-left: 16px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.morb-img {
+    position: relative;
+    width: 360px;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.heart {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    top: 52%;
+    left: 52%;
+    background-color: white;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transition: 500ms 0s ease;
+}
+
+.heart::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-25px, 0);
+    opacity: 0;
+    transition: 500ms 0s ease;
+}
+
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(0, -25px);
+    opacity: 0;
+    transition: 500ms 0s ease;
+}
+
+.morb-img:hover + .heart {
+    opacity: 1;
+}
+
+.morb-img:hover + .heart::before {
+    opacity: 1;
+}
+
+.morb-img:hover + .heart::after {
+    opacity: 1;
+}
+
+.heart:hover {
+    opacity: 1;
+}
+
+.heart:hover::before {
+    opacity: 1;
+}
+
+.heart:hover::after {
+    opacity: 1;
+}

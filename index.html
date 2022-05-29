@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="script.js"></script>
+    <title>Week 9 - Bootstrap: Morbin' Time</title>
+</head>
+<body class="bootstrap">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-themed">
+            <a class="navbar-brand" href="#">Morbin' Time</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="morb-moments.html">Morb moments</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="row d-flex justify-content-center">
+            <div class="col">
+                <!-- This is the left side column. I'm leaving it blank for now -->
+            </div>
+            <div class="col-sm-8" id="main-body">
+                <h1>Top 10 Morbius Moments</h1>
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col-sm"></th>
+                            <th scope="col-sm">Morbius Moment</th>
+                            <th scope="col-sm">Epicness rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>When he says, "It's morbin' time."</td>
+                            <td>infinitely epic</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>When he morbs all over those guys</td>
+                            <td>13/10 epic</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>When he says, "Stand back, I'm beginnng to morb!"</td>
+                            <td>11.420/10 epic</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Don't say that was only three, because uhh you're wrong.</p>
+                
+                <br />
+
+                <form>
+                    <div class="row">
+                        <div class="form-group col-sm">
+                            <label for="emailForm">Email address</label>
+                            <input type="email" class="form-control" id="emailForm" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group col-sm">
+                            <label for="multiSelect">Which moment is your favorite?</label>
+                            <select multiple class="form-control" id="multiSelect">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <!-- This is the right side column. I'm leaving it blank for now -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Here's a footer</p> 
+    </footer>
+</body>
+</html>
